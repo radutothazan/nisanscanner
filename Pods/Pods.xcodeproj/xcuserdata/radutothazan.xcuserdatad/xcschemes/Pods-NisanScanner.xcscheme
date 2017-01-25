@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6315191B1DF0E5C60073296F"
-               BuildableName = "NisanScanner.app"
-               BlueprintName = "NisanScanner"
-               ReferencedContainer = "container:NisanScanner.xcodeproj">
+               BlueprintIdentifier = "EEE46493B4055E6B8E7C95A4D2A88E06"
+               BuildableName = "Pods_NisanScanner.framework"
+               BlueprintName = "Pods-NisanScanner"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6315191B1DF0E5C60073296F"
-            BuildableName = "NisanScanner.app"
-            BlueprintName = "NisanScanner"
-            ReferencedContainer = "container:NisanScanner.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6315191B1DF0E5C60073296F"
-            BuildableName = "NisanScanner.app"
-            BlueprintName = "NisanScanner"
-            ReferencedContainer = "container:NisanScanner.xcodeproj">
+            BlueprintIdentifier = "EEE46493B4055E6B8E7C95A4D2A88E06"
+            BuildableName = "Pods_NisanScanner.framework"
+            BlueprintName = "Pods-NisanScanner"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6315191B1DF0E5C60073296F"
-            BuildableName = "NisanScanner.app"
-            BlueprintName = "NisanScanner"
-            ReferencedContainer = "container:NisanScanner.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

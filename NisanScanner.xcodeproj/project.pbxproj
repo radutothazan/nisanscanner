@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F75488097B53E7A8DB13E1E /* Pods_NisanScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4674C36BA38D878AAF1B566 /* Pods_NisanScanner.framework */; };
 		631519201DF0E5C60073296F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6315191F1DF0E5C60073296F /* AppDelegate.swift */; };
 		631519221DF0E5C60073296F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631519211DF0E5C60073296F /* ViewController.swift */; };
 		631519251DF0E5C60073296F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 631519231DF0E5C60073296F /* Main.storyboard */; };
 		631519281DF0E5C60073296F /* NisanScanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 631519261DF0E5C60073296F /* NisanScanner.xcdatamodeld */; };
 		6315192A1DF0E5C60073296F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631519291DF0E5C60073296F /* Assets.xcassets */; };
 		6315192D1DF0E5C60073296F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6315192B1DF0E5C60073296F /* LaunchScreen.storyboard */; };
+		631519351DF0E6D40073296F /* ScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631519341DF0E6D40073296F /* ScannerController.swift */; };
+		631519371DF0EBD40073296F /* Produs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631519361DF0EBD40073296F /* Produs.swift */; };
+		63E75B081DFB65C700FA34EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E75B071DFB65C700FA34EC /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,13 @@
 		631519291DF0E5C60073296F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6315192C1DF0E5C60073296F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6315192E1DF0E5C60073296F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		631519341DF0E6D40073296F /* ScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerController.swift; sourceTree = "<group>"; };
+		631519361DF0EBD40073296F /* Produs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Produs.swift; sourceTree = "<group>"; };
+		63E75B071DFB65C700FA34EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		63E75B091DFB65CD00FA34EC /* NisanScanner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NisanScanner.entitlements; sourceTree = "<group>"; };
+		9B8C4102C03528ABAD4E2D77 /* Pods-NisanScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NisanScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-NisanScanner/Pods-NisanScanner.release.xcconfig"; sourceTree = "<group>"; };
+		A4674C36BA38D878AAF1B566 /* Pods_NisanScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NisanScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE8C2B38B0BAC901B3FBA3FF /* Pods-NisanScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NisanScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NisanScanner/Pods-NisanScanner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63E75B081DFB65C700FA34EC /* MapKit.framework in Frameworks */,
+				0F75488097B53E7A8DB13E1E /* Pods_NisanScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253E0802580FC67125729E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E75B071DFB65C700FA34EC /* MapKit.framework */,
+				A4674C36BA38D878AAF1B566 /* Pods_NisanScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		631519131DF0E5C60073296F = {
 			isa = PBXGroup;
 			children = (
 				6315191E1DF0E5C60073296F /* NisanScanner */,
 				6315191D1DF0E5C60073296F /* Products */,
+				87A8247115B93F9CB5E92FF7 /* Pods */,
+				253E0802580FC67125729E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +80,11 @@
 		6315191E1DF0E5C60073296F /* NisanScanner */ = {
 			isa = PBXGroup;
 			children = (
+				63E75B091DFB65CD00FA34EC /* NisanScanner.entitlements */,
 				6315191F1DF0E5C60073296F /* AppDelegate.swift */,
 				631519211DF0E5C60073296F /* ViewController.swift */,
+				631519341DF0E6D40073296F /* ScannerController.swift */,
+				631519361DF0EBD40073296F /* Produs.swift */,
 				631519231DF0E5C60073296F /* Main.storyboard */,
 				631519291DF0E5C60073296F /* Assets.xcassets */,
 				6315192B1DF0E5C60073296F /* LaunchScreen.storyboard */,
@@ -67,6 +94,15 @@
 			path = NisanScanner;
 			sourceTree = "<group>";
 		};
+		87A8247115B93F9CB5E92FF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE8C2B38B0BAC901B3FBA3FF /* Pods-NisanScanner.debug.xcconfig */,
+				9B8C4102C03528ABAD4E2D77 /* Pods-NisanScanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 631519311DF0E5C60073296F /* Build configuration list for PBXNativeTarget "NisanScanner" */;
 			buildPhases = (
+				DEC911654593B80FC8C45624 /* [CP] Check Pods Manifest.lock */,
 				631519181DF0E5C60073296F /* Sources */,
 				631519191DF0E5C60073296F /* Frameworks */,
 				6315191A1DF0E5C60073296F /* Resources */,
+				D6C37A440B1091421530D589 /* [CP] Embed Pods Frameworks */,
+				C2A3EFCE5F8AE4813A554831 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -101,6 +140,14 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 598JXASR93;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -135,11 +182,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C2A3EFCE5F8AE4813A554831 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NisanScanner/Pods-NisanScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C37A440B1091421530D589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NisanScanner/Pods-NisanScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC911654593B80FC8C45624 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		631519181DF0E5C60073296F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631519371DF0EBD40073296F /* Produs.swift in Sources */,
+				631519351DF0E6D40073296F /* ScannerController.swift in Sources */,
 				631519221DF0E5C60073296F /* ViewController.swift in Sources */,
 				631519201DF0E5C60073296F /* AppDelegate.swift in Sources */,
 				631519281DF0E5C60073296F /* NisanScanner.xcdatamodeld in Sources */,
@@ -186,6 +283,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -236,6 +334,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -263,6 +362,7 @@
 		};
 		631519321DF0E5C60073296F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8C2B38B0BAC901B3FBA3FF /* Pods-NisanScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 598JXASR93;
@@ -276,6 +376,7 @@
 		};
 		631519331DF0E5C60073296F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8C4102C03528ABAD4E2D77 /* Pods-NisanScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 598JXASR93;
@@ -306,6 +407,7 @@
 				631519331DF0E5C60073296F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
